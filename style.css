@@ -1,0 +1,60 @@
+body{
+    background-color: rgba(13, 14, 13, 0.192);
+}
+.container{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.heading-text{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 0;
+
+}
+.text-area{
+    display:grid;
+    grid-template-columns: auto auto; 
+    font-weight: bold;
+    justify-content:start;
+    /*padding:0 27px;*/
+
+}
+span{
+    background-color: black;
+    border-radius: 100%;
+    padding:5px 9px;
+    color:white;
+    font-size:14px;
+    font-weight: bold;
+
+}
+button{
+    background-color: black;
+    color:white;
+    text-align:center;
+    border:0;
+    padding:5px 10px;
+    margin:0 0 0 70px;
+    text-transform: capitalize;
+}
+@media screen and (max-width:767px) {
+    .container{
+        width:100%;
+    }
+    .text-area{
+        padding:0;
+      
+    }
+}
+@media screen and (max-width:576px) {
+    .heading-text{
+        font-size:17px;
+        line-height: normal;
+    }
+    .text-area{
+        justify-content: start;
+    }
+    
+}
